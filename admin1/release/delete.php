@@ -1,0 +1,6 @@
+<?php 
+   $hapus=$mysqli->query("SELECT * FROM release_terakhir WHERE id='$_GET[id]'");
+    
+    $mysqli->query("DELETE FROM release_terakhir WHERE id='$_GET[id]'");
+    header('location:index.php');
+?>
